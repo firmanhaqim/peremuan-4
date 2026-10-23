@@ -1,0 +1,93 @@
+/*Mengatur ukuran elemen agar padding tidak melebihi lebar kotak yang ditentukan*/
+*{
+    box-sizing: border-box;
+}
+/* Mengatur posisi seluruh halaman agar berada tepat di tengah layar (vertikal & horizontal) */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eaf2f8;
+    color: rgb(44, 64, 80);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+/* Styling utama untuk kotak kartu profil di tengah */
+.card {
+    width: 400px;
+    padding: 30px;
+    border: 2px solid #3b82f6;
+    border-radius: 15px;
+    text-align: center;
+    background-color: white;
+}
+/* Selector ID: kotak utama profil */
+#profil {
+    width: 300px;
+    max-width: 100%;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: aliceblue;
+    border: 2px solid #3498db;
+    border-radius: 15px;
+    text-align: center;
+}
+/* Selector grup: mengatur beberapa judul sekaligus */
+h1, h3 { color: #2563eb;
+}
+/* Selector class: mengatur nama */
+.nama {
+    color: blue;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+/* Styling untuk teks jurusan (warna hijau toska, tebal, huruf kapital semua) */
+.jurusan {
+    color: #16a085;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* Selector turunan: paragraf di dalam kotak profil */
+#profil p {
+    line-height: 1.6;
+}
+/* Styling untuk paragraf deskripsi */
+.deskripsi {
+    font-size: 14px;
+    text-align: justify;
+}
+/* Mengatur pembungkus daftar keahlian */
+.daftar-keahlian {
+    margin: 15px 0;
+}
+
+/* Inline-block pertama: label keahlian */
+.keahlian {
+    display: inline-block;
+    background-color: rgba(52, 152, 219, 0.15);
+    color: #030608;
+    padding: 6px 12px;
+    margin: 4px;
+    border: 1px solid #3498db;
+    border-radius: 6px;
+    font-size: 13px;
+}
+/* Styling untuk tombol Hubungi Saya */
+.tombol {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* Efek perubahan warna ketika kursor diarahkan ke tombol */
+.tombol:hover {
+    background-color: black;
+}
